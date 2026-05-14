@@ -1,2 +1,39 @@
 @import url(./reset.css);
 
+.body{
+    margin-left: 10px;
+}
+.header{
+    display: flex;
+    margin: 15px;
+    height: 58px;
+}
+.header-left{
+}
+.header-left img{
+    width: 100px;
+}
+.header-center{
+    margin: auto;
+    height: 48px;
+}
+.header-center form{
+    height: 27px;
+}
+.header-center form> input {
+    height: 27px;
+    width: 200px;
+    padding: 0 7px;
+    border-radius: 15px;
+}
+.submit{
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    
+}
+.aside{}
+.main{}
+.footer{
+
+}
