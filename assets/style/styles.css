@@ -1,39 +1,129 @@
 @import url(./reset.css);
 
-.body{
+body{
     margin-left: 10px;
 }
-.header{
+.conteudo{
     display: flex;
-    margin: 15px;
-    height: 58px;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    column-gap: 10px;
+
+    height: 39px;
+    padding-top: 8px;
+    margin-right: 10px;
 }
 .header-left{
-}
-.header-left img{
-    width: 100px;
-}
-.header-center{
-    margin: auto;
-    height: 48px;
-}
-.header-center form{
-    height: 27px;
-}
-.header-center form> input {
-    height: 27px;
-    width: 200px;
-    padding: 0 7px;
-    border-radius: 15px;
-}
-.submit{
-    width: 36px;
-    height: 36px;
-    border-radius: 50px;
+    justify-content: flex-start;
     
 }
-.aside{}
-.main{}
-.footer{
+.header-left img{
+    width: 90px;
+    padding-left: 8px;
+}
+.header-center{
+    justify-self: center;
+}
+.form-busca{
+    text-align: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 5px;
 
+    height: 29px; 
+}
+.barra-buscar{
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 20vw;
+}
+.img-busca{
+    width: 20px;
+    height: 20px;
+}
+.submit{
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 29px;
+}
+.header-right{
+    justify-self: flex-end;
+}
+.img-perfil{
+    width: 25px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+aside{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(10, 1fr);
+
+    font-size: 13px;
+    
+    margin-top: 9px;
+    width: 15vw;
+    height: 570px;
+   
+}
+.aside a{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 45px;
+    padding-left: 8px;
+
+    border-radius: 16px;
+}
+.aside a:hover{
+    background-color: rgb(182, 182, 182);
+    transition: .15s;
+}
+.main{
+    font-size: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 10px;
+    justify-items: center;
+
+    width: 80vw;
+    margin-left: 9px;
+    margin-top: 9px;
+}
+.main-videos{
+    padding: 7px;
+}
+.main-videos:hover{
+    background-color: rgb(180, 180, 180);
+    border-radius: 15px;
+    transform: scale(1.05);
+    transition: .5s;
+}
+.main-videos img:hover{
+    border-radius: 15px;
+
+    transition: .5s;
+}
+.main-videos h1{
+    width: 200px;
+    font-size: 12px;
+    margin-left: 2px;
+}
+.main-videos div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 3px 0;
+}
+.img-channel{
+    width: 27px;
+    border-radius: 50%;
+    margin-left: 2px;
 }
